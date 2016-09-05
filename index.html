@@ -71,7 +71,7 @@
 <li>ファイル、特にプログラムのソースコードの管理に使われるバージョン管理システムのひとつ。
 特に規模が大きなプログラム、多くのファイルに分かれたプログラムともなると編集ミスをしたりバグを埋め込んでしまった、なんてとき「あ～どのファイルのどこを変更したっけ～...」となることが多くなる。さらに複数人での開発となるとなおさら。そこでプログラムフォルダ(リポジトリ)単位でソースコードごとに変更(差分)を編集内容などのコメントとともに記録しておけば「この変更がまずかったかな？」という推測もしやすくなる。gitはこのバージョン管理システムをプログラマに使いやすい形で提供してくれる。<br>
 たとえば、「一区切りついた。ここで一旦変更を記録しておこう(commit)」、「この変更はまずかった、このひとつ前まで戻そう(checkoutしてrevert)」などが簡単ににできる。<br>
-ちなみに、このgitはLinuxの生みの親で有名なLinus Torvalds(リーナス・トーバルズ)氏がそれまで使っていたバージョン管理システムが使えなくなった(くわしくは<a href="https://ja.wikipedia.org/wiki/Git">Wikipedia - git</a>を参照)のを機にそれ以前のバージョン管理システムの欠点を埋めるアイデアを取り入れて開発した。現在最もスタンダードでポピュラーなバージョン管理システムである。</li>
+ちなみに、このgitはLinuxの生みの親で有名なLinus Torvalds(リーナス・トーバルズ)さんがそれまで使っていたバージョン管理システムが使えなくなった(くわしくは<a href="https://ja.wikipedia.org/wiki/Git">Wikipedia - git</a>を参照)のを機にそれ以前のバージョン管理システムの欠点を埋めるアイデアを取り入れて開発した。現在最もスタンダードでポピュラーなバージョン管理システムである。</li>
 </ul>
 
 <h3>
@@ -79,7 +79,44 @@
 
 <ul>
 <li>gitの1機能、「リモートサーバでのリポジトリ管理」の「リモートサーバ」の中でもいま(2016年現在)最も人気なサービス。<br>
-gitのリモートサーバ機能だけでなくSNS的機能(followers, feeds)もついており、あまり凝っていないサイトならGitHub内で公開出来たりととても便利。ちなみにこのページもGitHubの1機能「GitHub Pages」を使わせて頂いている。</li>
+gitのリモートサーバ機能だけでなくSNS的機能(followers, feeds)もついており、あまり凝っていないサイトならGitHub内で公開出来たりととても便利。ちなみにこのページもGitHubの1機能「GitHub Pages」を使って公開している。<br>
+</li>
+</ul>
+
+<h3>
+<a id="データベース" class="anchor" href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>データベース</h3>
+
+<ul>
+<li>(たとえば住所や電話番号など、特に膨大な量の情報を)検索、蓄積しやすいように整理されたデータの集まり。<br>
+データベースには「オブジェクトデータベース」、「関係(relational:リレーショナル)データベース」などの考え方(種類)があり、「関係データベース」を管理するためのしくみ(データベースを管理するための仕組みを「データベース管理システム(Data Base Management System, DBMS)」という)で有名なのが「<a href="https://ja.wikipedia.org/wiki/SQL">SQL</a>」(エスキューエル、シーケル)。詳細は先のリンクや検索で。<br>
+要するに、「後で検索とかできるようにデータをためておいたもの」。</li>
+</ul>
+
+<h3>
+<a id="スキーマ" class="anchor" href="#%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%9E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>スキーマ</h3>
+
+<ul>
+<li>もともとは「図とか図式とか」を表す言葉。(CfHなど情報系？でこの言葉を聞いたときは多分)関係データベースの「構造(概念スキーマ)」、「仕様(内部スキーマ)」のこと。だいたいの場合後者の内部スキーマのことを言っている。
+データベースを作ったはいいが(A氏)「あのデータどこにあったっけ？検索したいんだが...」(B氏)「知らん、C氏が作ったデータベースだから」(C氏)「えっと...あーたしか......わすれたっすテヘペロ(・ω&lt;)」みたいなことにならないように、データベースを作るときはデータを置く階層の構造、データ内容の記録形式などの「仕様」を決めてから実際のデータを入力していく。この決めた仕様を「スキーマ」という。
+要するに、「データベースの仕様」。</li>
+</ul>
+
+<h2>
+<a id="その他" class="anchor" href="#%E3%81%9D%E3%81%AE%E4%BB%96" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>その他</h2>
+
+<h3>
+<a id="code-for-xxx-コードフォー地域の名前" class="anchor" href="#code-for-xxx-%E3%82%B3%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E5%9C%B0%E5%9F%9F%E3%81%AE%E5%90%8D%E5%89%8D" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code for xxx (コード・フォー・&lt;地域の名前&gt;)</h3>
+
+<ul>
+<li>その地域の声をききながら「(プログラムなどの)コードによって地域をより良くしていこう」という取り組みをしている非営利団体。
+Code for Hakodateもこのくくり。もともとは2008年ころに発足した「Code for America(コード・フォー・アメリカ)」から始まり、2013年末には「Code for Japan(...ジャパン)」も出来た。「civic tech(シビック・テック、civic:市民, tech:技術)」、自分たち(civic)の身の回りをテクノロジーの力を借りてよくしていこう、という取り組みを主な活動内容としている。</li>
+</ul>
+
+<h3>
+<a id="絶賛編集中" class="anchor" href="#%E7%B5%B6%E8%B3%9B%E7%B7%A8%E9%9B%86%E4%B8%AD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>絶賛編集中！</h3>
+
+<ul>
+<li>ご指摘、追記要望、受け付けています。連絡は<a href="https://github.com/ryo-hey" class="user-mention">@ryo-hey</a>まで。</li>
 </ul>
 
       <footer class="site-footer">
